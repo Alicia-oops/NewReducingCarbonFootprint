@@ -1,0 +1,170 @@
+*
+{
+      margin: 0;
+      padding: 0;
+}
+
+.nav-bar{
+      background: rgb(0, 0, 0);
+      height: 80px;
+      position: relative;
+      z-index: 100%;
+      font-family: sans-serif;
+}
+
+
+header
+{
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-image: url(wow.jpeg);
+}
+
+ul {
+      margin: 0px;
+      padding: 0px;
+      list-style-type: none;
+}
+
+ul li {
+      float: left;
+      width: 230px;
+      height: 50px;
+      background-color: black;
+      line-height: 40px;
+      text-align: center;
+      display: inline-block;
+      font-size: 20px;
+      margin-top: 20px;
+}
+
+ul li a {
+      text-decoration: none;
+      display: block;
+      color: white;
+}
+
+ul li a:hover{
+      background: #fff;
+      transition: .4s;
+      color: #000;
+}
+
+ul li ul li{
+      display: none;
+      margin-top: 0px;
+}
+
+ul li:hover ul li{
+      display: block;
+}
+
+#slider{
+    overflow: hidden;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    animation: 10s slider infinite;
+}
+
+#slider figure img{
+    float: left;
+    width: 20%;
+}
+
+@keyframes slider{
+    0%  {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    /* 75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    } */
+}
+
+.menu
+{
+      margin-right: auto;
+      list-style: none;
+      margin: 20px;
+      margin: auto;
+}
+
+.menu li{
+      display: inline-block;
+      margin: 10px 5px;
+}
+
+.menu li a{
+      text-decoration: none;
+      color: #fff;
+      padding: 5px 10px;
+      font-family: sans-serif;
+}
+
+.menu li a:hover{
+      background: #fff;
+      transition: .4s;
+      color: #000;
+}
+
+h1{
+      font-size: 70px;
+      color: white;
+      text-align: center;
+      font-family: sans-serif;
+}
+
+body{
+      margin: 0px;
+      padding: 0px;
+      background: #f1f1f1;
+}
+
+.card{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      background-color: #fff;
+      text-align: center;
+      border-radius: 40px;
+      padding-bottom: 15px;
+      width: 350px;
+      height: 250px;
+}
+
+.column{
+      width: 23%;
+      float: left;
+      padding: 0px 10px;
+}
+
+.row::after{
+      content: "";
+      display: table;
+      clear: both;
+}

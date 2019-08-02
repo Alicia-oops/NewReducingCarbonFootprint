@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.img{
+  width: 350px;
+  height: 250px;
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  border:3px;
+  border-style:solid;
+  border-color:#000000;
+  padding: 1em;
+  background-color:rgba(247, 247, 247, 0.53);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+<!--<a href="https://www.gazelle.com/">Gazelle</a>-->
+<div class="mySlides fade">
+  <div class="numbertext"><a href="https://www.sephora.com/brand/seed-phytonutrients?om_mmc=aff-linkshare-redirect-EHFxW6yx8Uo&c3ch=Linkshare&c3nid=EHFxW6yx8Uo&affid=EHFxW6yx8Uo-9nMoLa0DccNxEoBVrqmJeg&ranEAID=EHFxW6yx8Uo&ranMID=2417&ranSiteID=EHFxW6yx8Uo-9nMoLa0DccNxEoBVrqmJeg&ranLinkID=10-1&browserdefault=true
+">Seed Phytonutrients</a></div>
+  <img src="bottle.jpg" style= "width: 70%">
+  <div class="text">Seed Phytonutrients is a company who specializes in providing the most natural,
+    biodegradable products to their clients. Their sole mission is to help minimize the amount of plastic
+    and non-recyclable products in their packaging through using a paper-like material in their shampoos
+     and body moisturizers and a mineral coating helps the paper-like material dry faster than normal paper.
+     Seed Phytonutrients prides themselves in being the first ever company to create a paper bottle and create
+     sustainability one product at a time. Support their movement! </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><a href="https://www.plaineproducts.com/">Plaine Products</a></div>
+  <img src="shampoo.jpg" style="width:40%">
+  <img src="conditioner.jpg" style="width:40%">
+  <div class="text">Coming from the Bahamas and their father being a small-business entrepreneur, sisters, Lindsey and Alison
+     Delaplaine, decided to create a business that would enable customers to make it simple to help reduce the amount of plastic
+     they own in their bathrooms. That is how Plaine Products came to life. With their very own refillable aluminum shampoo bottles,
+   they are able to refill empty bottles, which help to minimize the amount of plastic in the ocean. Despite their products being a
+   little bit pricey, in the long run, their products are like no other; with the variety of products from rosemary vanilla to citrus lavender,
+   Plaine Products has it all.
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><a href="https://us.whogivesacrap.org/">Who Gives A Crap</a></div>
+  <img src="toiletpaper.png" style="width:100%">
+  <div class="text">Looking for some sustainable toilet paper? Then, Who Gives a Crap might just be for you! With 50% of their toilet paper comes
+     from recycled toilet paper, Who Gives A Crap has been able to deliver to their customers delightful and consistent good toilet paper that helps
+      to build toilets around the world. In addition, they donate 50% of their profits to charity and have ventured to challenge themselves to have
+       a plastic-free journey since the majority of their packaging materials are derived from plastic. If you are looking for good toilet paper and
+       trying to have a good bum, then Who Gives A Crap can be the toilet paper of your dreams.
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><a href="https://shopwoobamboo.com/">WooBamboo!</a></div>
+  <img src="toothbrush.webp" style="width:100%">
+  <div class="text">Looking for some cheap and sustainable toothpaste and toothbrush? Look into this company who was established in 2013 during Earth Day. As a means to reduce
+    the amount of plastic floss and toothpaste that has a ton of toxic chemicals, WooBamboo! Has made its sole mission to deliver to their customers the utmost natural, sustainable
+    hygiene products. With their Natural Toothbrush, Natural Floss, and Pet Oral Care; WooBamboo! fits every families needs. So do you Woo?
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><a href="https://ecos.com/">ECOS</a></div>
+  <img src="toothbrush.png" style="width:100%">
+  <div class="text">Family owned and operated since 1967, Ecos is a team  of visioneers who believe in all people having access to clean, affordable, eco friendly products. Its’ products
+     are top quality and have the freshest scents out there. All natural ingredients, you will never want to switch to any other kind of hygiene brand again!
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><a href="https://www.leafd.org/">Leaf'd</a></div>
+  <img src="sprays.png" style="width:100%">
+  <div class="text">Leaf’d uniting a sustainability movement by making it easy to search for eco brands and products, learn about the latest green trends, and connect with non profits. They donate
+     a percentage of all purchases to partnering organizations! Leaf'd has you covered for all your food, health, and clothing needs all while keeping its products 100% natural!
+</div>
+</div>
+
+
+
+
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</body>
+</html>
